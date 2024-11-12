@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+}
+
+/* Cover Page Style */
+.cover-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.cover-container h1 {
+  font-size: 24px;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.cover-container p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #007bb2;
+}
+
+/* Quiz Page Style */
+.quiz-container {
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  color: #333;
+}
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options-container button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #e0f7fa;
+  color: #333;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options-container button:hover {
+  background-color: #b3e5fc;
+}
+
+.next-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: block;
+  text-align: center;
+}
+
+.next-button:hover {
+  background-color: #007bb2;
+}
+
+/* Score Display */
+.score-display {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.score-display .score-value {
+  font-style: bold;
+  font-weight: bold; /* Membuat angka menjadi tebal */
+}
+
+/* Style untuk Tombol Kembali dan Ulangi */
+.end-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.restart-button,
+.home-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.restart-button {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+.restart-button:hover {
+  background-color: #007bb2;
+}
+
+.home-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.home-button:hover {
+  background-color: #d32f2f;
+}
