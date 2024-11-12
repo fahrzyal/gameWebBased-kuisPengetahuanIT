@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Pengetahuan Umum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="startScreen" class="cover-container">
+      <h1>Selamat Datang di Kuis Pengetahuan Umum</h1>
+      <p>Klik tombol di bawah untuk memulai kuis!</p>
+      <button id="startButton" class="start-button">Mulai Kuis</button>
+    </div>
+
+    <div id="quizScreen" class="quiz-container" style="display: none">
+      <h2 class="question-text" id="question">Pertanyaan</h2>
+      <div class="options-container" id="options"></div>
+      <button id="nextBtn" class="next-button" style="display: none">
+        Pertanyaan Selanjutnya
+      </button>
+      <p id="score" class="score-display">
+        Score: <span class="score-value">0</span>
+      </p>
+
+      <!-- Tombol dipindahkan ke dalam quizScreen -->
+      <div id="endButtons" class="end-buttons" style="display: none">
+        <button class="restart-button" onclick="restartQuiz()">
+          Ulangi Kuis
+        </button>
+        <button class="home-button" onclick="goHome()">
+          Kembali ke Halaman Utama
+        </button>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
