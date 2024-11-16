@@ -20,15 +20,18 @@ body {
 /* Cover Page Style */
 .cover-container {
   text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 400px;
+  padding: 171px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.25);
+  backdrop-filter: blur(12.5px);
+  width: 1250px;
+  height: 600px;
 } 
 
 .cover-container h1 {
-  font-size: 24px;
+  font-size: 100px;
+  font-family: Zaptron;
   color: #4a90e2;
   margin-bottom: 20px;
 }
