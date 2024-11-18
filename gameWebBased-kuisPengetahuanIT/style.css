@@ -1,3 +1,12 @@
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: MyFont;
+  src: url(Zaptron-Regular.otf);
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -20,7 +29,7 @@ body {
 /* Cover Page Style */
 .cover-container {
   text-align: center;
-  padding: 171px;
+  padding: 110px;
   flex-shrink: 0;
   border-radius: 25px;
   background: rgba(217, 217, 217, 0.25);
@@ -30,25 +39,39 @@ body {
 } 
 
 .cover-container h1 {
-  font-size: 100px;
-  font-family: Zaptron;
-  color: #4a90e2;
-  margin-bottom: 20px;
+  font-family: MyFont;
+  color: #FFF;
+  text-align: center;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cover-container h1 span {
+  color: #FFEA06;
 }
 
 .cover-container p {
-  font-size: 18px;
-  color: #666;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: normal;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
   margin-bottom: 20px;
 }
 
 .start-button {
-  padding: 12px 25px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #4a90e2;
+  font-family: Poppins;
+  margin-top: 80px;
+  padding: 20px 60px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  background-color: #FFEA06;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -57,42 +80,66 @@ body {
   background-color: #007bb2;
 }
 
+.cover-container  .watermark {
+  text-align: center;
+  margin-top: 9%;
+  line-height: normal;
+  font-style: normal;
+  font-weight: 200;
+  color: #FFF;
+  font-size: 16px;
+}
+
 /* Quiz Page Style */
 .quiz-container {
+  width: 1450px;
+  height: 650px;
   text-align: center;
   padding: 20px 30px;
-  border-radius: 10px;
+  border-radius: 25px;
   background-color: #FFF;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 350px;
-  color: #333;
+  background: rgba(217, 217, 217, 0.25);
+  backdrop-filter: blur(12.5px);
 }
 
 .question-text {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  margin: 1% 2%;
+  padding: 9% 4%;
+  border-radius: 15px;
+  color: #000;
+  background-color: #fff;
   margin-bottom: 20px;
-  color: #444;
 }
 
 .options-container {
+  height: 35%;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  text-align: center;
+  margin: 1% 2%;
+  gap: 3px;
 }
 
 .options-container button {
-  padding: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 5% 2%;
   font-size: 16px;
   background-color: #e0f7fa;
   color: #333;
-  border: 2px solid #4a90e2;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
+  z-index: 999;
 }
 
 .options-container button:hover {
   background-color: #b3e5fc;
+  border: 2px solid #4a90e2;
 }
 
 .next-button {
@@ -114,31 +161,43 @@ body {
 
 /* Score Display */
 .score-display {
+  margin-top: -3.5%;
+  margin-left: 3%;
+  width: 30%;
   font-size: 18px;
-  margin-top: 10px;
+  font-family: Poppins;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
-  color: #333;
+  color: #FFF;
 }
 
 .score-display .score-value {
+  z-index: -999;
   font-style: bold;
   font-weight: bold; /* Membuat angka menjadi tebal */
 }
 
 /* Style untuk Tombol Kembali dan Ulangi */
 .end-buttons {
-  margin-top: 20px;
+  width: 100%;
+  margin: 1% 2%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  /* justify-content: space-around; */
   gap: 10px;
+  background-color: red;
 }
 
 .restart-button,
 .home-button {
+  width: 47.6%;
+  margin-top: -230px;
+  margin-bottom: 70px;
   padding: 10px 15px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
