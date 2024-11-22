@@ -4,15 +4,36 @@ const questions = [
     { question: "Apa fungsi utama dari CPU dalam sebuah komputer?", options: ["Menyimpan data", "Menjalankan program dan memproses data", "Menampilkan gambar di layar", " Menghubungkan komputer ke internet"], answer: "Menjalankan program dan memproses data" },
     { question: "Di bawah ini, manakah yang termasuk sistem operasi?", options: ["Microsoft Word", "Microsoft", "Windows", "Google Chrome"], answer: "Windows" },
     { question: "Bahasa pemrograman apa yang digunakan terutama untuk pengembangan aplikasi berbasis web?", options: ["C++", "HTML", "Python", "Java"], answer: "HTML" },
-    { question: "Lihat gambar di bawah ini. Perangkat apa yang ditunjukkan pada gambar?", options: ["Monitor", "RAM", "CPU", "Hard Drive"], answer: "CPU" },
-    { question: "Lihat gambar berikut. Fungsi apa yang digunakan untuk menemukan panjang dari sebuah string dalam bahasa Python?", options: ["length()", "count()", " size()", "len()"], answer: "len()" },
+    { question: "Lihat gambar di bawah ini. Perangkat apa yang ditunjukkan pada gambar?", 
+        image: "assets/soal4.jpg",
+        options: ["Monitor", "RAM", "CPU", "Hard Drive"], 
+        answer: "CPU" },
+    { question: "Lihat gambar berikut. Fungsi apa yang digunakan untuk menemukan panjang dari sebuah string dalam bahasa Python?", 
+        image: "assets/soal5.jpg",
+        options: ["length()", "count()", " size()", "len()"], 
+        answer: "len()" },
     { question: "Dalam sebuah database relasional, apa fungsi dari indeks pada tabel?", options: ["Untuk menyimpan data sementara", "Untuk mengurutkan data secara otomatis saat data dimasukkan", "Untuk mempercepat akses dan pencarian data dalam tabel", "Untuk menggabungkan beberapa tabel sekaligus"], answer: "Untuk mempercepat akses dan pencarian data dalam tabel" },
-    { question: "Perhatikan pernyataan SQL berikut. Apa fungsi dari perintah JOIN dalam SQL?", options: ["Menggabungkan dua atau lebih tabel berdasarkan kolom terkait", "Menghapus data dari tabel", "Menghitung jumlah total baris dalam tabel", "Membuat tabel baru di database"], answer: "Menggabungkan dua atau lebih tabel berdasarkan kolom terkait" },
+    { question: "Perhatikan pernyataan SQL berikut. Apa fungsi dari perintah JOIN dalam SQL?", 
+        image: "assets/soal7.jpg",
+        options: ["Menggabungkan dua atau lebih tabel berdasarkan kolom terkait", "Menghapus data dari tabel", "Menghitung jumlah total baris dalam tabel", "Membuat tabel baru di database"], 
+        answer: "Menggabungkan dua atau lebih tabel berdasarkan kolom terkait" },
     { question: "Dalam konteks keamanan jaringan, apa fungsi dari firewall?", options: ["Menyimpan data sementara dalam jaringan", "Mencegah akses yang tidak sah ke atau dari jaringan", "Mengatur urutan paket data yang dikirimkan", "Memonitor pengguna di jaringan lokal"], answer: "Mencegah akses yang tidak sah ke atau dari jaringan" },
-    { question: "Pada gambar berikut, fungsi berikut dideklarasikan dalam bahasa JavaScript. Apa yang akan dikembalikan oleh fungsi ini jika kita memanggilnya dengan calculateSum(5, 10)?", options: ["15", "10", "5", "Error  "], answer: "15" },
-    { question: "Berdasarkan kode dalam gambar, manakah opsi yang benar untuk mendeklarasikan variabel age dalam bahasa C++?", options: ["age = 25;", "int age = 25;", "var age = 25;", "age : int = 25;"], answer: "int age = 25;" },
-    { question: "Pada gambar berikut, apa fungsi dari operator ++ pada kode C++ ini?", options: ["Mengurangi nilai x sebanyak 1", "Menampilkan nilai x tanpa perubahan", "Menambah nilai x sebanyak 1", "Indonesia"], answer: "Menambah nilai x sebanyak 1" },
-    { question: "Perhatikan kode dalam gambar berikut ini. Apa output dari kode Python berikut?", options: ["5", "120", "25", "24"], answer: "120" },
+    { question: "Pada gambar berikut, fungsi berikut dideklarasikan dalam bahasa JavaScript. Apa yang akan dikembalikan oleh fungsi ini jika kita memanggilnya dengan calculateSum(5, 10)?", 
+        image: "assets/soal9.jpg",
+        options: ["15", "10", "5", "Error  "], 
+        answer: "15" },
+    { question: "Berdasarkan kode dalam gambar, manakah opsi yang benar untuk mendeklarasikan variabel age dalam bahasa C++?", 
+        image: "assets/soal10.jpg",
+        options: ["age = 25;", "int age = 25;", "var age = 25;", "age : int = 25;"], 
+        answer: "int age = 25;" },
+    { question: "Pada gambar berikut, apa fungsi dari operator ++ pada kode C++ ini?", 
+        image: "assets/soal11.jpg",
+        options: ["Mengurangi nilai x sebanyak 1", "Menampilkan nilai x tanpa perubahan", "Menambah nilai x sebanyak 1", "Indonesia"], 
+        answer: "Menambah nilai x sebanyak 1" },
+    { question: "Perhatikan kode dalam gambar berikut ini. Apa output dari kode Python berikut?", 
+        image: "assets/soal12.jpg",
+        options: ["5", "120", "25", "24"], 
+        answer: "120" },
     { question: 'Dalam konteks jaringan komputer, apa yang dimaksud dengan "Subnet Mask"?', options: ["Alamat unik yang digunakan untuk mengidentifikasi perangkat pada jaringan", "Sebuah nilai yang menentukan bagian jaringan dan host pada alamat IP", "Protokol untuk menghubungkan komputer ke internet", "Proses untuk mengubah alamat IP menjadi alamat fisik"], answer: "Sebuah nilai yang menentukan bagian jaringan dan host pada alamat IP" },
     { question: 'Pada bahasa pemrograman C++, konsep "friend class" digunakan untuk:', options: ["Mengizinkan kelas lain mengakses anggota private atau protected dari kelas lain", "Menggabungkan dua kelas menjadi satu", "Mewarisi semua anggota dari kelas induk", "Mencegah akses ke anggota private dalam suatu kelas"], answer: "Mengizinkan kelas lain mengakses anggota private atau protected dari kelas lain" },
     { question: "Dalam basis data, apa tujuan dari normalisasi hingga bentuk normal ketiga (3NF)?", options: ["Mengurangi duplikasi data dan memastikan data terkait disimpan secara terpisah", "Menghapus semua data dari tabel", "Menggabungkan tabel menjadi satu tabel besar", "Menambahkan indeks untuk mempercepat akses data"], answer: "Mengurangi duplikasi data dan memastikan data terkait disimpan secara terpisah" }
@@ -22,7 +43,7 @@ let currentQuestion = 0;
 let score = 0;
 
 // Audio Elements
-const backsound = new Audio("sounds/backsound.mp3");
+const backsound = new Audio("sounds/backsound.mp");
 const clickSound = new Audio("sounds/clickSound.mp3"); // Sound effect universal untuk semua tombol
 const correctSound = new Audio("sounds/correct.mp3");
 const wrongSound = new Audio("sounds/wrong.mp3");
@@ -61,6 +82,15 @@ function loadQuestion() {
     const q = questions[currentQuestion];
     questionElement.textContent = q.question;
     optionsElement.innerHTML = "";
+
+    // Menampilkan gambar
+    if (q.image) {
+        const imageElement = document.createElement("img");
+        imageElement.src = q.image; // Menetapkan sumber gambar
+        imageElement.style.width = "300px"; // Menentukan lebar gambar (sesuaikan dengan kebutuhan)
+        imageElement.style.marginTop = "20px"; // Memberi jarak antara soal dan gambar
+        questionElement.appendChild(imageElement); // Menambahkan gambar ke elemen soal
+    }
 
     q.options.forEach(option => {
         const button = document.createElement("button");
