@@ -145,8 +145,8 @@ img {
   height: 100%;
   padding: 5% 2%;
   font-size: 16px;
-  background-color: #e0f7fa;
-  color: #333;
+  background-color: #FFEA06;
+  color: #000;
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -154,8 +154,8 @@ img {
 }
 
 .options-container button:hover {
-  background-color: #b3e5fc;
-  border: 2px solid #4a90e2;
+  background-color: #496395;
+  border: 2px solid #2f1c46;
 }
 
 .next-button {
